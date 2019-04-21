@@ -14,8 +14,8 @@ func main() {
 	fmt.Println(currency(rub))
 	fmt.Println("Введите длины катетов в сантиметрах через пробел:")
 	fmt.Scanln(&kate1, &kate2)
-	println("Площадь:", ploshad(kate1, kate2), "квадртаных сантиметров")
-	println("Длина гипотенузы", gipotenuza(kate1, kate2),"Длина периметра", perimeter(kate1, kate2), "сантиметров")
+	println("Площадь:", ploshad(kate1, kate2), "квадртаных см")
+	println("Длина гипотенузы", gipotenuza(kate1, kate2),"см, Длина периметра", perimeter(kate1, kate2), "см")
 
 }
 
@@ -35,11 +35,11 @@ func currency(rub float64) float64 {
 	return toFixed(usd, 2)
 }
 
-func ploshad (kate1, kate2 float64) float64 {
+func ploshad (kate1 float64, kate2 float64) float64 {
 	return kate1*kate2/2
 }
 
-func perimeter (kate1, kate2 float64) float64 {
+func perimeter (kate1 float64, kate2 float64) float64 {
 	return  toFixed(gipotenuza(kate1, kate2) + kate1 + kate2, 2)
 }
 
