@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(currency(rub))
 	fmt.Println("Введите длины катетов в сантиметрах через пробел:")
 	fmt.Scanln(&kate1, &kate2)
-	fmt.Printf("Площадь:%f кв. см", ploshad(kate1, kate2))
+	fmt.Printf("Площадь :%f кв. см", ploshad(kate1, kate2))
 	fmt.Printf("\nДлина гипотенузы: %f см, \nДлина периметра: %f см", gipotenuza(kate1, kate2), perimeter(kate1, kate2))
 
 }
