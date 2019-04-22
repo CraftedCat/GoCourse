@@ -16,7 +16,6 @@ func main() {
 	fmt.Scanln(&kate1, &kate2)
 	fmt.Printf("Площадь :%f кв. см", ploshad(kate1, kate2))
 	fmt.Printf("\nДлина гипотенузы: %f см, \nДлина периметра: %f см", gipotenuza(kate1, kate2), perimeter(kate1, kate2))
-
 }
 
 func currency(rub float64) float64 {
