@@ -11,11 +11,11 @@ func main() {
 	var kate2 float64
 	fmt.Println("Введите ваше кол-во рублей")
 	fmt.Scanln(&rub)
-	fmt.Printf("Кол-во долларов:%f \n", currency(rub))
+	fmt.Printf("Кол-во долларов:%.2f \n", currency(rub))
 	fmt.Println("Введите длины катетов в сантиметрах через пробел:")
 	fmt.Scanln(&kate1, &kate2)
-	fmt.Printf("Площадь :%f кв. см", ploshad(kate1, kate2))
-	fmt.Printf("\nДлина гипотенузы: %f см, \nДлина периметра: %f см", gipotenuza(kate1, kate2), perimeter(kate1, kate2))
+	fmt.Printf("Площадь :%.2f кв. см", ploshad(kate1, kate2))
+	fmt.Printf("\nДлина гипотенузы: %.2f см, \nДлина периметра: %.2f см", gipotenuza(kate1, kate2), perimeter(kate1, kate2))
 }
 
 func currency(rub float64) float64 {
